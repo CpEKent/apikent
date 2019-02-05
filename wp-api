@@ -1,0 +1,14 @@
+WP API
+
+<?php echo get_page_link( get_page_by_title( page_name )->ID ); ?>  call link by pages name.
+<?php get_header(); ?> call header.php filename.
+<?php get_footer(); ?> call footer.php filename.
+<?php get_sidebar(); ?> call sidebar.php filaname.
+<?php /* Template Name: page_template_name */ ?> name the pages for template.
+<?php get_template_part( 'content', get_post_format() ); ?> call main index
+<?php if(is_page( 'page_name' ) || is_page('page_name') ) : ?><?php else: ?><?php endif ?> condition by pagename is_page
+<?php echo get_bloginfo( 'name' ); ?> main worpdress main
+<?php echo get_bloginfo( 'description' ); ?> main wordpress description
+<?php echo get_bloginfo('template_directory'); ?> main template directory
+<?php wp_head(); ?> declare head
+<?php echo get_bloginfo( 'wpurl' );?> main url
